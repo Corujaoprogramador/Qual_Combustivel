@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         if (gasolineEditText.text.toString().isEmpty() || ethanolEditText.text.toString().isEmpty()) {
             Toast.makeText(
                 this,
-                "Informe o valor dos dois combustíveis.",
-                Toast.LENGTH_SHORT
+                getString(R.string.error_empty_fields),
+            Toast.LENGTH_SHORT
             ).show()
             mTextView.text = ""
         } else {
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         return try {
             input.text.toString().toDouble()
         } catch (e: NumberFormatException) {
-            Toast.makeText(this, "Valor inválido", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.error_invalid_value), Toast.LENGTH_SHORT).show()
             0.0
         }
     }
