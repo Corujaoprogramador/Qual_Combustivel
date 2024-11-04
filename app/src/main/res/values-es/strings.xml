@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Qué Combustible</string>
+    <string name="answer_ethanol">Llenar con etanol.</string>
+    <string name="answer_gas">Llenar con gasolina.</string>
+    <string name="message_gas">Precio por litro de gasolina:</string>
+    <string name="message_ethanol">Precio por litro de etanol:</string>
+    <string name="button_text">¿Cuál es la mejor opción?</string>
+    <string name="error_empty_fields">Ingrese el precio de ambos combustibles.</string>
+    <string name="error_invalid_value">Valor inválido</string>
+</resources>
